@@ -1,0 +1,14 @@
+h1 {
+    background-color: cadetblue;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: unset;
+    font-variant: small-caps;
+}
+
+p {
+   color:magenta;
+   margin-inline-end: 0px; 
+}         
+
