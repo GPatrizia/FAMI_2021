@@ -14,4 +14,19 @@ p {
 
 span.ingredient {
     color:indianred;}
-    
+ 
+ul {
+    color:darkorange;}
+
+a[href^="https"]:before {
+    content: "🔗 ";u}
+  
+  a[href^="mailto"]:before {
+    content: "📧 ";}
+  
+  a[href^="tel"]:before {
+    content: "📞 ";}
+  
+  li {
+    margin-bottom:25px;
+  }
