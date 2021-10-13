@@ -1,5 +1,5 @@
 h1 {
-    background-color: cadetblue;
+    background-color:lightsalmon;
     text-align: center;
     font-size: xx-large;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -19,7 +19,7 @@ ul {
     color:darkorange;}
 
 a[href^="https"]:before {
-    content: "🔗 ";u}
+    content: "🔗 ";}
   
   a[href^="mailto"]:before {
     content: "📧 ";}
@@ -28,5 +28,5 @@ a[href^="https"]:before {
     content: "📞 ";}
   
   li {
-    margin-bottom:25px;
+    margin-bottom:15px;
   }
