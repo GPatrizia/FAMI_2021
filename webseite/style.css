@@ -26,6 +26,7 @@ body {
 #navigation a {
     color: gray;
     padding: 8px;
+    font-size: 20px;
 }
 
 #navigation a:hover {
