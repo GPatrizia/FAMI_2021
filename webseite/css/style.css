@@ -1,20 +1,27 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
-    margin: 0px
+    margin: 0px;
 }
 
 #top {
     text-align: center;
+
+}
+
+.navigation-link {
+    margin: 0px 20px;
 }
 
 #logo {
     color: white;
     background-color: peru;
+    border: 20px;
     display: inline-block;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
     padding: 10px;
-    margin-top: 16px;
+    margin-top: 25px;
+
 }
 
 #logo-name {
@@ -35,8 +42,9 @@ body {
 
 #image img {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #main {
@@ -49,5 +57,15 @@ body {
     text-align: center;
     color: gray;
     padding: 16px;
-    word-spacing: 0.5em;
+    word-spacing: 2px;
+}
+
+
+button {
+    padding: 20px;
+    background: red;
+    border: 2px solid gray;
+    border-radius: 52px;
+    font-size: 20px;
+    color: white;
 }
