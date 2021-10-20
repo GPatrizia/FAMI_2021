@@ -44,9 +44,8 @@ header {
     margin-bottom: 40px;
 }
 
+
 #main {
-    max-width: 600px;
-    margin: auto;
     padding: 20px;
 }
 
@@ -55,4 +54,18 @@ header {
     color: gray;
     padding: 16px;
     word-spacing: 2px;
+}
+
+.parent {
+    display:flex;
+    flex-flow: row;
+    margin:50px
+
+}
+
+.child_rezept {
+    flex: 1;
+    margin: 80px;
+    padding: 20px;
+    
 }
