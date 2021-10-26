@@ -11,7 +11,6 @@ body {
   height: 30px;
   width: calc(100% - 60px);
   margin: 10px;
-  padding-top: 70px;
 }
 
 .child {
@@ -56,4 +55,95 @@ a[href^="https"]:before {
 
 .underline  {
   text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: radial-gradient(black);
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+.parent_box {
+  background-color:indigo;
+  height: 150px;
+  width: 100%;
+}
+
+.child_logo img{
+  width: 120px;
+  margin: 20px;
+}
+
+.child_nav {
+  width: 100%;
+  height: 85px;
+  background-color:black;
+  box-shadow: 2px 2px 4px rgba(0,0,10,15,20);
+}
+
+.child_nav ul {
+  float: right;
+  display: absolute;
+}
+
+.child_nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+.child_nav ul li a {
+  font:bold;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 30px;
+  display: block;
+}
+
+.child_nav ul li a:hover{
+  background-color: gray;
+}
+
+.child_nav ul li ul{
+  display: none;
+  position: absolute;
+  background-color: indigo;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.child_nav ul li:hover ul{
+  display: block;
+}
+
+.child_nav ul li ul li a{
+  color: white;
+  padding: 16px 20px;
+  border-radius: 10px;
+}
+
+.child_nav ul li ul li a:hover{
+  background-color: violet;
 }
