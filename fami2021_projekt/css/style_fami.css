@@ -3,8 +3,8 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
   
 .navbar {
@@ -14,8 +14,9 @@ body {
   
 .navbar img {
     width: 110px;
-    padding: 20px;
+    padding: 22px;
 }
+
   
 nav ul {
     list-style: none;
@@ -30,8 +31,9 @@ nav {
   
 li {
     display: inline;
-    padding: 25px;
-    text-transform:uppercase;
+    padding: 40px;
+    text-transform: uppercase;
+    font-size: 20px;
 }
   
 nav a {
@@ -43,22 +45,28 @@ nav a {
 }
   
 nav a:hover {
-    color: #00b2b2;
+    color:darkred;
 }
-  
+
 nav a:active {
-    font-weight: bold;
-    color:aquamarine;
+    color:red;
+}
+
+.balken {
+    width: 100%;
+    height: 30px;
+    background-color:black;
 }
   
 @media screen and (max-width: 700px) {
     nav {
       width: 100%;
-      margin-top: -25px;
+      flex-flow: column;
+      height: auto;
     }
   
     nav li {
-      display: block;
+      display:block;
       background-color:black;
       text-align: center;
       text-transform:uppercase;
