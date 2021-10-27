@@ -1,0 +1,72 @@
+* {
+    font-family: Montserrat, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation {
+    height: 120px;
+    background-color: black;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.navigation img {
+    height: 110px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    flex-flow: row;
+}
+
+li  {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.logoArea  {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+}
+
+.logoArea p {
+    color: white;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color:darkred;
+}
+
+nav a:active {
+    color:red;
+}
+
+.parent {
+    display: flex;
+    flex-flow: row;
+    height: 200px;
+    background: red;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.child {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    background-color: yellow;
+}
