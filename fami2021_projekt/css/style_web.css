@@ -1,0 +1,131 @@
+* {
+    font-family: Montserrat, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+
+}
+
+.navigation img {
+    height: 100px;
+}
+
+.navigation img:hover {
+    color: rgb(139, 0, 0);
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    flex-flow: row;
+    font-size: 25px;
+}
+
+li  {
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.logoArea  {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+}
+
+nav a:hover {
+    color:rgb(139, 0, 0);
+}
+
+nav a:active {
+    color:rgb(255, 0, 0);
+}
+
+.zitat {
+    display: flex;
+    position: absolute;
+    padding-left: 250px;
+    padding-top: 500px;
+
+}
+
+.img_wein {
+    background-color:black;
+    padding-bottom: 100px;
+}
+
+.parent {
+    display: flex;
+    flex-flow: row;
+    height: 800px;
+    background:rgb(200, 200, 200);
+    justify-content: space-evenly;
+    align-items:center;
+    overflow-wrap: normal;
+}
+
+
+.child {
+    height: 200px;
+    width: 250px;
+    margin: 20px;
+    background-color:white;
+}
+
+.container_contact {
+    background-image: url(../images/red-juice-splashes-crystal-glass-standing-black-space.jpg);
+    background-size: cover;
+    height: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact h3{
+    font-size: 30px;
+    color: white;
+    padding-bottom: 50px;
+}
+
+input[type=text], textarea {
+    width:100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    box-sizing:border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+  background-color:rgb(139, 0, 0);
+  color: hsl(0, 0%, 100%);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.container {
+  border-radius: 20px;
+  background-color:rgb(200, 200, 200);
+  padding: 20px;
+}
