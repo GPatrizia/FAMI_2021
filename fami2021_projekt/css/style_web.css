@@ -57,10 +57,12 @@ nav a:active {
 .zitat {
     display: flex;
     position: absolute;
-    padding-left: 250px;
+    padding-left: 400px;
     padding-top: 500px;
+    background: none;
 
 }
+
 
 .img_wein {
     background-color:black;
@@ -69,20 +71,20 @@ nav a:active {
 
 .parent {
     display: flex;
-    flex-flow: row;
+    flex-flow:wrap;
     height: 800px;
     background:rgb(200, 200, 200);
-    justify-content: space-evenly;
-    align-items:center;
+    justify-content:center;
+    align-content:center;
     overflow-wrap: normal;
 }
-
 
 .child {
     height: 200px;
     width: 250px;
     margin: 20px;
     background-color:white;
+    box-sizing: border-box;
 }
 
 .container_contact {
@@ -128,4 +130,50 @@ input[type=submit]:hover {
   border-radius: 20px;
   background-color:rgb(200, 200, 200);
   padding: 20px;
+}
+
+.about_img img{
+    
+}
+
+.parent_box {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    justify-content:space-evenly;
+    align-items: center;
+    background: local;
+    background-color: black;
+    
+}
+
+.child_box {
+    width: 250px;
+    height: 550px;
+    text-align:justify;
+    letter-spacing: -0.5px;
+    border-radius: 10px;
+    color:white;
+}
+
+.child_box h3{
+    padding-top: 20px;
+}
+
+.child_box p {
+    padding-top: 15px;
+}
+
+.child_box img {
+    border-radius: 5px;
+}
+
+.footer p {
+    height: 25px;
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding: 16px;
+    word-spacing: 2px;
+    font-size: 15px;
 }
