@@ -28,7 +28,7 @@
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="produkt.html">PRODUKT</a></li>
                 <li><a href="team.html">TEAM</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
             </ul>
         </nav>
     </div>
@@ -36,46 +36,54 @@
 
 
     <div class="container_contact">
-        <div class="Map"></div>
-        <div style='height:800px;width:800px;'><iframe width="250" height="500"
-                src=https://maps.google.de/maps?hl=de&q=Bevanda%20%20Färbergasse+15%20Dornbirn&t=&z=14&ie=utf8&iwloc=b&output=embed
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                style='position: absolute;height:800px;width:800px;border-radius:20px;'>
-                <a href="http://www.kurierexpress24.de" style="font-size:10px;" title="Kurier"
-                    target="_blank">Kurier</a></iframe>
-        </div>
 
-        <div class="contact">
-            <h3>Kontakt Formular</h3>
-
-            <div class="container">
-                <form action="/action_page.php">
-                    <label for="fname">Vorname</label>
-                    <input type="text" id="fname" name="Vorname" placeholder="Hier schreiben..">
-
-                    <label for="lname">Nachname</label>
-                    <input type="text" id="lname" name="Nachname" placeholder="Hier schreiben..">
-
-                    <label for="country">Mailadresse</label>
-                    <input type="text" id="cname" name="Mailadresse" placeholder="Hier schreiben..">
-
-                    <label for="subject">Nachricht</label>
-                    <textarea id="subject" name="Nachricht" placeholder="Hier schreiben.."
-                        style="height:350px"></textarea>
-
-                    <input type="submit" value="Senden">
-
+        <div class="map">
+            <div style='height:400px;width:400px;'><iframe width="400" height="400"
+                    src=https://maps.google.de/maps?hl=de&q=Bevanda%20%20Färbergasse+15%20Dornbirn&t=&z=14&ie=utf8&iwloc=b&output=embed
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style='height:400px;width:400px;'>
+                    Von <a href="http://computer-datenrettung.de/" style="font-size:10px;" title="PC"
+                        target="_blank">PC</a></iframe>
+                <p
+                    style="text-align:right; margin:0px; padding-top:-10px; line-height:10px;font-size:10px;margin-top: -25px;">
+                    <a href="http://economic-engineering.de/" style="font-size:10px;" title="economic"
+                        target="_blank">economic</a>
+                </p>
             </div>
-
-            
-
-
-
         </div>
 
-        <div class="footer">
-            <p>Copyright 2021 © / VINO</p>
+        <div class="form">
+            <h2>KONTAKT FORMULAR</h2>
+
+            <form action="/action_page.php">
+                <label for="fname">VORNAME:</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">NACHNAME:</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">MAILADRESSE:</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">NACHRICHT:</label><br>
+                <textarea name="message" style="width:400px; height:150px;"></textarea><br>
+                <br>
+                <button class="button">SENDEN</button>
+            </form>
         </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        <div class="copyright">
+            <p>Copyright 2021 © / <img src="../images/logo_web.png" height="15px"></p>
+        </div>
+        <div class="social">
+            <img src="../images/instagram.png" height="30px">
+            <img src="../images/youtube.png" height="30px">
+            <img src="../images/facebook.png" height="30px">
+            <img src="../images/tick-tock.png" height="30px">
+            <img src="../images/twitter.png" height="30px">
+        </div>
+    </div>
 </body>
 
 
