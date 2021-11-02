@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 35px;
+    overflow: hidden;
 
 }
 
@@ -64,6 +65,7 @@ nav a:active {
 .img_wein {
     background-color:black;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 
 .home_h1 {
@@ -84,8 +86,9 @@ nav a:active {
     background:rgb(200, 200, 200);
     justify-content:space-evenly;
     align-content:center;
-    padding-bottom: 150px;
+    padding-bottom: 175px;
     padding-top: 100px;
+    
 }
 
 .child_magazin {
@@ -212,14 +215,28 @@ nav a:active {
     background-color:rgb(139, 0, 0);
 }
 
+.produkt_head {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .produkt_parent {
     display: flex;
     flex-direction:row;
     align-items:center;
-    justify-content:center;
+    justify-content:space-evenly;
     padding: 50px;
     background-color: aquamarine;
+    box-sizing: border-box;
+    
 }
 
 .produkt_child img{
@@ -232,6 +249,7 @@ nav a:active {
     background-color: blueviolet;
     height: 400px;
     width: 200px;
+    text-align: left;
 }
 
 
@@ -262,6 +280,7 @@ nav a:active {
     flex-direction:row;
     justify-content:center;
     align-items:center;
+    overflow: hidden;
 }
 
 .footer p {
