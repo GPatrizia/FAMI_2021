@@ -218,8 +218,8 @@ nav a:active {
     flex-direction:row;
     align-items:center;
     justify-content:center;
-    background-color: aquamarine;
     padding: 50px;
+    background-color: aquamarine;
 }
 
 .produkt_child img{
@@ -245,7 +245,9 @@ nav a:active {
 
 
 
-
+.glasses {
+    width: 100%;;
+}
 
 
 
