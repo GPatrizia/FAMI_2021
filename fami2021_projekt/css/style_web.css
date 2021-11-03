@@ -76,7 +76,7 @@ nav a:active {
     background-color:rgb(200, 200, 200);
     color:black;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     letter-spacing: 10px;
 }
 
@@ -101,45 +101,34 @@ nav a:active {
     width: 200px;
 }
 
-.slidecontainer {
-    width: 100%;
-}
-  
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 25px;
-    background:hsl(0, 0%, 100%, 0.5);
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-  
-.slider:hover {
-    opacity: 1;
-}
-  
-.slider::-moz-range-thumb {
-    width: 50px;
-    height: 25px;
-    background:rgb(139, 0, 0);
-    cursor: pointer;
-}
-
 .container {
   border-radius: 20px;
   background-color:rgb(200, 200, 200);
   padding: 20px;
 }
 
+
+
 .team_img img{
     width: 100%;
+    height: 500px;
+    margin-bottom: -10px;
+}
+
+.team_h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:50px;
+    background-color:black;
+    color:white;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    letter-spacing: 13px;
 }
 
 .parent_box {
     display: flex;
-    padding:110px;
     flex-direction: row;
     justify-content:space-evenly;
     align-items: center;
@@ -150,7 +139,7 @@ nav a:active {
 
 .child_box {
     width: 250px;
-    height: 550px;
+    height: 750px;
     text-align:justify;
     letter-spacing: -0.5px;
     border-radius: 10px;
@@ -186,8 +175,7 @@ nav a:active {
     background-image: url(../images/csm_Weinschule-c-Shutterstock-2640_d712a3428d.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-size: 100% 100%;
-    height: 1130px;
+    min-height: calc(100vh - 225px);
     
 }
 
@@ -228,19 +216,63 @@ nav a:active {
     transform: translate(-50%, -50%);
 }
 
+.produkt_video video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    object-fit:cover;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+.produkt_h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:50px;
+    background-color:black;
+    color:white;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    letter-spacing: 13px;
+}
+
+.produkt_parent_slide {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    padding: 70px;
+    background-color:white;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    
+}
+
 .produkt_parent {
     display: flex;
     flex-direction:row;
     align-items:center;
     justify-content:space-evenly;
     padding: 50px;
-    background-color: aquamarine;
+    background-color:white;
     box-sizing: border-box;
     
 }
 
+.produkt_child  {
+    display: flex;
+}
+
 .produkt_child img{
-    background-color:blue;
+    display: flex;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
     height: 400px;
     width: 120px;
 }
@@ -254,7 +286,11 @@ nav a:active {
 
 
 
-
+label {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 7px;
+}
 
 
 
@@ -264,7 +300,12 @@ nav a:active {
 
 
 .glasses {
-    width: 100%;;
+    margin-bottom: -10px;
+    opacity: 0.25;
+    overflow: hidden;
+    justify-content: center;
+    margin-left: -50%;
+
 }
 
 
@@ -286,3 +327,5 @@ nav a:active {
 .footer p {
     padding:40px;
 }
+
+
