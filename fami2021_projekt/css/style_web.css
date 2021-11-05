@@ -111,8 +111,11 @@ nav a:active {
 
 .team_img img{
     width: 100%;
-    height: 500px;
+    height: 800px;
     margin-bottom: -10px;
+    padding-bottom: 50px;
+    background-color: black;
+    object-fit: cover;
 }
 
 .team_h1 {
@@ -123,17 +126,30 @@ nav a:active {
     background-color:black;
     color:white;
     padding-top: 100px;
-    padding-bottom: 150px;
-    letter-spacing: 13px;
+    padding-bottom: 160px;
+    letter-spacing: 17px;
 }
 
-.parent_box {
+.parent_box1 {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
     align-items: center;
     background: local;
-    background-color: black;
+    background-color:white;
+    padding-top: 200px;
+    flex-wrap: nowrap;
+    
+}
+
+.parent_box2 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    background: local;
+    background-color:white;
+    flex-wrap: nowrap;
     
 }
 
@@ -141,9 +157,9 @@ nav a:active {
     width: 250px;
     height: 750px;
     text-align:justify;
-    letter-spacing: -0.5px;
     border-radius: 10px;
-    color:white;
+    color:black;
+    text-align:left;
 }
 
 .child_box h3{
@@ -220,7 +236,7 @@ nav a:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 800px;
     object-fit:cover;
     padding-bottom: 50px;
     background-color: black;
@@ -234,23 +250,32 @@ nav a:active {
     background-color:black;
     color:white;
     padding-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 160px;
     letter-spacing: 13px;
 }
 
 .produkt_parent_slide {
     display: flex;
-    max-width: 800px;
+    max-width: 1500px;
     margin: 0 auto;
     flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    padding: 70px;
+    padding: 150px;
     background-color:white;
     box-sizing: border-box;
-    overflow-x: scroll;
+    overflow-x:scroll;
     flex-wrap: nowrap;
     
+}
+
+.produkt_child_slide img{
+    display: flex;
+    background-color:white;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 800px;
+    width: 500px;
+    object-fit:scale-down;
+    padding-bottom: 150px;
 }
 
 .produkt_parent {
@@ -266,22 +291,24 @@ nav a:active {
 
 .produkt_child  {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .produkt_child img{
     display: flex;
-    background-color: white;
-    padding-left: 30px;
-    padding-right: 30px;
+    background-color:white;
+    padding-left: 50px;
+    padding-right: 50px;
     height: 400px;
     width: 120px;
 }
 
 .produkt_child p {
-    background-color: blueviolet;
+    background-color:white;
     height: 400px;
     width: 200px;
     text-align: left;
+    
 }
 
 
@@ -300,7 +327,6 @@ label {
 
 
 .glasses {
-    margin-bottom: -10px;
     opacity: 0.25;
     overflow: hidden;
     justify-content: center;
