@@ -75,22 +75,37 @@ nav a:active {
     flex-flow:row;
     background:rgb(200, 200, 200);
     justify-content:space-evenly;
-    align-content:center;
+    flex-wrap: wrap;
     padding-bottom: 175px;
-    padding-top: 100px;
+    padding-top: 50px;
+    object-fit:scale-down;
     
 }
 
+video {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+}
+
+.child_video {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .child_magazin {
-    width: 700px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    min-width: 100px;
+    padding-top: 30px;
     padding-bottom: 30px;
     text-align: justify;
 }
-.child_slider {
-    color:brown;
-    height: 200px;
-    width: 200px;
-}
+
 
 .container {
   border-radius: 20px;
@@ -102,7 +117,7 @@ nav a:active {
 
 .team_img img{
     width: 100%;
-    height: 800px;
+    max-height: 800px;
     margin-bottom: -10px;
     padding-bottom: 50px;
     background-color: black;
@@ -128,7 +143,6 @@ nav a:active {
     flex-wrap: wrap;
     background-color:white;
     padding: 50px;
-    box-sizing: border-box;
     min-width: 25%;
 }
 
@@ -171,27 +185,40 @@ nav a:active {
     display: flex;
     flex-direction:row;
     justify-content:flex-end;
-    padding-right:250px;
+    padding-right:350px;
     align-items:center;
     background-image: url(../images/csm_Weinschule-c-Shutterstock-2640_d712a3428d.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    min-height: calc(100vh - 225px);
-    
+    min-height: calc(100vh - 265px);
 }
 
 .map {
+    display: flex;
+    align-items: center;
     padding-right: 130px;
+    max-width: 400px;
+    min-width: 200px;
 }
 
+
+
 .form h2{
-    color:black;
+    color:white;
     padding-bottom: 20px;
 }
 
 .form label{
-    color:black;
+    color:white;
+    font-size: 15px;
 }
+
+label {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
 
 .form .button {
     background-color: black;
@@ -256,9 +283,9 @@ nav a:active {
 .produkt_child_slide img{
     display: flex;
     background-color:white;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 700px;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-height: 700px;
     object-fit:scale-down;
 }
 
@@ -268,7 +295,6 @@ nav a:active {
     align-items:center;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    padding: 50px;
     background-color:white;
     box-sizing: border-box;
 }
@@ -285,8 +311,8 @@ nav a:active {
 .produkt_child img {
     display: flex;
     background-color:white;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
     height: 400px;
     width: 120px;
 }
@@ -300,15 +326,12 @@ nav a:active {
     color: rgb(139, 0, 0);
 }
 
-
-
-
-
-label {
-    display: block;
-    margin-top: 25px;
-    margin-bottom: 7px;
+.produkt_text p {
+    font-size: xx-large;
 }
+
+
+
 
 
 
@@ -353,46 +376,76 @@ label {
     }
 
     .img_wein {
-        padding-bottom: 10px;
+        padding-bottom: 17px;
+    }
+
+    .child_magazin {
+        padding: 20px;
+        text-align: justify;
     }
 
     .home_h1 {
-        
+        font-size: 17px;
+        padding:25px
     }
 
-    .produkt_video {
+    .parent_video {
+        flex-flow: column;
+    }
 
+    .team_h1 {
+        font-size: 17px;
+    }
+
+    .parent_box {
+        padding: 0px;
+
+    }
+
+    .child_box {
+        padding-bottom: 0px;
+        padding-top: 70px;
     }
 
     .produkt_h1 {
-        font-size: 10px;
+        font-size: 17px;
     }
 
     .produkt_parent_slide {
         align-self:center;
     }
 
-    .produkt_parent {
-
-    }
-
-
     .produkt_child {
         width: 33,3%;
+        padding-top:25px
     }
 
 
+    .container_contact {
+        flex-flow: column;
+        padding-right: 0px;
+    }
 
-
+    
 
     .footer {
         flex-flow: column;
         padding: 6px;
     }
+
+    .map {
+        padding-right: 0px;
+        padding-top: 70px;
+    }
+
+    .form {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
     
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
 
     .produkt_child {
         width: 100%;
