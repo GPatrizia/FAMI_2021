@@ -94,6 +94,7 @@ nav a:active {
 .child_magazin {
     width: 700px;
     padding-bottom: 30px;
+    text-align: justify;
 }
 .child_slider {
     color:brown;
@@ -130,41 +131,35 @@ nav a:active {
     letter-spacing: 17px;
 }
 
-.parent_box1 {
+.parent_box {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    align-items: center;
-    background: local;
+    flex-wrap: wrap;
     background-color:white;
-    padding-top: 200px;
-    flex-wrap: nowrap;
-    
-}
-
-.parent_box2 {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items: center;
-    background: local;
-    background-color:white;
-    flex-wrap: nowrap;
-    
+    padding: 50px;
+    box-sizing: border-box;
+    min-width: 25%;
 }
 
 .child_box {
-    width: 250px;
-    height: 750px;
-    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 600px;
     border-radius: 10px;
     color:black;
-    text-align:left;
+    padding-top: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 100px;
+    text-align: justify;
 }
 
 .child_box h3{
     padding-top: 25px;
     text-align:left;
+    color: rgb(139, 0, 0);
 }
 
 .child_box h5{
@@ -256,12 +251,11 @@ nav a:active {
 
 .produkt_parent_slide {
     display: flex;
-    max-width: 1500px;
+    max-width: 900px;
+    padding-top: 120px;
     margin: 0 auto;
     flex-direction:row;
-    padding: 150px;
     background-color:white;
-    box-sizing: border-box;
     overflow-x:scroll;
     flex-wrap: nowrap;
     
@@ -270,12 +264,11 @@ nav a:active {
 .produkt_child_slide img{
     display: flex;
     background-color:white;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 800px;
-    width: 500px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 700px;
+    width: 900px;
     object-fit:scale-down;
-    padding-bottom: 150px;
 }
 
 .produkt_parent {
@@ -283,18 +276,29 @@ nav a:active {
     flex-direction:row;
     align-items:center;
     justify-content:space-evenly;
+    flex-wrap: wrap;
     padding: 50px;
     background-color:white;
     box-sizing: border-box;
-    
 }
 
 .produkt_child  {
     display: flex;
-    flex-wrap: wrap;
+    width: 25%;
+    padding-top: 100px;
+    margin: 50px;
 }
 
-.produkt_child img{
+@media screen and (max-width: 1500px) {
+    .produkt_child {
+        width: 33%;
+    }
+    
+}
+
+
+
+.produkt_child img {
     display: flex;
     background-color:white;
     padding-left: 50px;
@@ -303,12 +307,17 @@ nav a:active {
     width: 120px;
 }
 
-.produkt_child p {
-    background-color:white;
-    height: 400px;
-    width: 200px;
-    text-align: left;
-    
+.produkt_text {
+    margin-top: 200px;
+    min-width: 200px;
+}
+
+.produkt_text h3 {
+    color: rgb(139, 0, 0);
+}
+
+.produkt_text p {
+    font-size:40px;
 }
 
 
@@ -330,7 +339,6 @@ label {
     opacity: 0.25;
     overflow: hidden;
     justify-content: center;
-    margin-left: -50%;
 
 }
 
