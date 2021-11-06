@@ -5,7 +5,6 @@
 }
 
 .navigation {
-    height: 100px;
     background-color: black;
     display: flex;
     flex-flow: row;
@@ -50,15 +49,6 @@ nav a:hover {
 
 nav a:active {
     color:rgb(255, 0, 0);
-}
-
-.zitat {
-    display: flex;
-    position: absolute;
-    padding-left: 470px;
-    padding-top: 350px;
-    background: none;
-
 }
 
 
@@ -231,10 +221,11 @@ nav a:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 800px;
+    max-width: 100%;
     object-fit:cover;
     padding-bottom: 50px;
     background-color: black;
+    max-height: 800px;
 }
 
 .produkt_h1 {
@@ -251,7 +242,8 @@ nav a:active {
 
 .produkt_parent_slide {
     display: flex;
-    max-width: 900px;
+    min-width: 100px;
+    max-width: 750px;
     padding-top: 120px;
     margin: 0 auto;
     flex-direction:row;
@@ -264,10 +256,9 @@ nav a:active {
 .produkt_child_slide img{
     display: flex;
     background-color:white;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
     height: 700px;
-    width: 900px;
     object-fit:scale-down;
 }
 
@@ -287,13 +278,6 @@ nav a:active {
     width: 25%;
     padding-top: 100px;
     margin: 50px;
-}
-
-@media screen and (max-width: 1500px) {
-    .produkt_child {
-        width: 33%;
-    }
-    
 }
 
 
@@ -316,9 +300,7 @@ nav a:active {
     color: rgb(139, 0, 0);
 }
 
-.produkt_text p {
-    font-size:40px;
-}
+
 
 
 
@@ -345,13 +327,12 @@ label {
 
 
 .footer {
-    height: 25px;
+    display: flex;
     background-color: black;
     color:white;
     padding: 15px;
     word-spacing: 2px;
     font-size: 15px;
-    display: flex;
     flex-direction:row;
     justify-content:center;
     align-items:center;
@@ -359,7 +340,61 @@ label {
 }
 
 .footer p {
-    padding:40px;
+    padding:10px;
+
 }
 
 
+@media screen and (max-width: 1500px) {
+
+    .navigation, .navigation ul{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .img_wein {
+        padding-bottom: 10px;
+    }
+
+    .home_h1 {
+        
+    }
+
+    .produkt_video {
+
+    }
+
+    .produkt_h1 {
+        font-size: 10px;
+    }
+
+    .produkt_parent_slide {
+        align-self:center;
+    }
+
+    .produkt_parent {
+
+    }
+
+
+    .produkt_child {
+        width: 33,3%;
+    }
+
+
+
+
+
+    .footer {
+        flex-flow: column;
+        padding: 6px;
+    }
+    
+}
+
+@media screen and (max-width: 1025px) {
+
+    .produkt_child {
+        width: 100%;
+    }
+}
