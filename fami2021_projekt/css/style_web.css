@@ -87,6 +87,7 @@ nav a:active {
 
 video {
     max-width: 700px;
+    min-width: 100px;
     width: 100%;
     height: auto;
 }
@@ -374,6 +375,14 @@ label {
 
 }
 
+@media screen and (max-width: 1150px) {
+
+    .produkt_child {
+
+        width: 50%;
+    }
+}
+
 
 @media screen and (max-width: 1100px) {
 
@@ -502,9 +511,80 @@ label {
     
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1090px) {
 
     .produkt_child {
         width: 100%;
+    }
+
+    .child_box {
+        padding: 20px;
+        margin: 0px;
+
+    }
+}
+
+
+@media screen and (max-width: 910px) {
+
+    .produkt_child {
+        width: 50%;
+    }
+
+    .parent_video {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .child_video {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        max-width: 700px;
+        min-width: 300px;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .parent_box {
+        width: 50%;
+
+    }
+
+    .produkt_child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .produkt_parent {
+        margin: 0 auto;
+    }
+
+    .produkt_child {
+        width: 100%;
+
+    }
+
+    .parent_box {
+        width: 50%;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .parent_box {
+        padding: 80px;
+
     }
 }
