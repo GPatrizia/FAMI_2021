@@ -157,10 +157,10 @@ video {
     height: 600px;
     border-radius: 10px;
     color:black;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-left: 120px;
     padding-right: 120px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     text-align: justify;
 }
 
@@ -183,6 +183,14 @@ video {
 .child_box img {
     border-radius: 5px;
     border: solid 2px;
+}
+
+.cork {
+    opacity: 0.25;
+    overflow: hidden;
+    justify-content: center;
+    margin: -5px;
+
 }
 
 .container_contact {
@@ -335,19 +343,11 @@ label {
 }
 
 
-
-
-
-
-
-
-
-
-
 .glasses {
     opacity: 0.25;
     overflow: hidden;
     justify-content: center;
+    margin: -5px;
 
 }
 
@@ -372,56 +372,104 @@ label {
 }
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1800px) {
 
     .navigation, .navigation ul{
         flex-flow: column;
         align-items: center;
+        padding-bottom: 10px;
+    }
+
+    ul {
+        padding-top: 20px;
+    }
+    
+    li {
+        padding: 25px;
+    }
+
+    .img_wein img{
+        width: 250%;
+        min-height: 100px;
+        max-height: 300px;
+        object-fit:cover;
+        margin-left: -105%;
     }
 
     .img_wein {
-        padding-bottom: 17px;
+        padding-bottom: 25px;
     }
 
     .child_magazin {
-        padding: 20px;
         text-align: justify;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .home_h1 {
         font-size: 17px;
-        padding:25px
+        padding-top: 50px;
+        padding-bottom: 35px;
     }
 
     .parent_video {
         flex-flow: column;
+        padding: 0px;
+    }
+
+    .parent_video video {
+        padding-bottom: 50px;
     }
 
     .team_h1 {
         font-size: 17px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    
     }
 
     .parent_box {
         padding: 0px;
+        margin: 30px;
 
     }
 
     .child_box {
         padding-bottom: 0px;
-        padding-top: 70px;
+        padding-top: 60px;
+        flex-flow: column;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .produkt_h1 {
         font-size: 17px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    
     }
 
     .produkt_parent_slide {
         align-self:center;
+        margin-bottom: 60px;
+        padding-top: 60px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .produkt_child {
         width: 33,3%;
-        padding-top:25px
+        margin: 0px;
+        padding-top: 60px;
+    }
+
+    .produkt_text {
+        margin-top: 190px;
+    }
+
+
+    .glasses {
+        padding-top: 60px;
     }
 
 
