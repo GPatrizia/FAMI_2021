@@ -92,7 +92,11 @@ video {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
+}
+
+.child_video h2 {
+    padding-bottom: 15px;
 }
 
 
