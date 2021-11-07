@@ -51,6 +51,9 @@ nav a:active {
     color:rgb(255, 0, 0);
 }
 
+.dropdown {
+    display: none;
+}
 
 .img_wein {
     background-color:black;
@@ -372,13 +375,15 @@ label {
 }
 
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1100px) {
 
-    .navigation, .navigation ul{
+    .navigation, .navigation ul {
         flex-flow: column;
         align-items: center;
         padding-bottom: 10px;
     }
+
+    
 
     ul {
         padding-top: 20px;
@@ -497,7 +502,7 @@ label {
     
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
 
     .produkt_child {
         width: 100%;
