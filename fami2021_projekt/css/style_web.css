@@ -637,6 +637,8 @@ label {
         align-items: left;
         justify-items: center;
         flex-flow: column;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .produkt_h1 {
@@ -805,6 +807,9 @@ label {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+    
     }
 
     .form {
@@ -825,6 +830,28 @@ label {
     padding-top: 40px;
     padding-bottom: 10px;
     letter-spacing: 5px;
+}
+
+.glasses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.25;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0px;
+
+}
+
+.cork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.25;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0px;
+
 }
 
 }
