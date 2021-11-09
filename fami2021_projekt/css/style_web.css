@@ -198,7 +198,7 @@ video {
     opacity: 0.25;
     overflow: hidden;
     justify-content: center;
-    margin: -5px;
+    margin-bottom: -5px;
 
 }
 
@@ -378,7 +378,7 @@ label {
     opacity: 0.25;
     overflow: hidden;
     justify-content: center;
-    margin: -5px;
+    margin-bottom: -5px;
 
 }
 
